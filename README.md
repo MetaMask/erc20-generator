@@ -1,4 +1,4 @@
-# ERC20 Token Generator
+# Dr Zedds Mystery Magical ERC20 Token Generator
 
 [![Build Status](https://travis-ci.org/vittominacori/erc20-generator.svg?branch=master)](https://travis-ci.org/vittominacori/erc20-generator)
 [![Coverage Status](https://coveralls.io/repos/github/vittominacori/erc20-generator/badge.svg?branch=master)](https://coveralls.io/github/vittominacori/erc20-generator?branch=master)
