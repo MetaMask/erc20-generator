@@ -29,9 +29,9 @@ App = {
       App.web3Provider.enable();
     }
 
-    $.getJSON('ERC20Token.json', function (data) {
-      App.contracts.ERC20Token = TruffleContract(data);
-      App.contracts.ERC20Token.setProvider(App.web3Provider);
+    $.getJSON('BaseToken.json', function (data) {
+      App.contracts.BaseToken = TruffleContract(data);
+      App.contracts.BaseToken.setProvider(App.web3Provider);
     });
   },
 };

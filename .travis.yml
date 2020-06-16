@@ -1,5 +1,4 @@
 dist: trusty
-sudo: false
 group: beta
 language: node_js
 node_js:
@@ -16,7 +15,6 @@ jobs:
   # --elopio - 20180531
   fast_finish: true
   allow_failures:
-    - env: SOLIDITY_COVERAGE=true
     - env: SOLC_NIGHTLY=true
   include:
     - stage: tests
@@ -33,8 +31,7 @@ jobs:
 
     - stage: tests
       name: "Unit tests with coverage report"
-      script: npm run test
-      env: SOLIDITY_COVERAGE=true
+      script: npm run coverage
 
     - stage: tests
       name: "Unit tests using solc nightly"

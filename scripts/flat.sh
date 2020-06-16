@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-truffle-flattener contracts/ERC20Token.sol > dist/ERC20Token.dist.sol
+CONTRACT_NAME=BaseToken
+
+truffle-flattener contracts/$CONTRACT_NAME.sol > dist/$CONTRACT_NAME.dist.sol

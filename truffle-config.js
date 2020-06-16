@@ -1,7 +1,7 @@
 require('chai/register-should');
 
 const solcStable = {
-  version: '0.5.15',
+  version: '0.6.10',
   settings: {
     optimizer: {
       enabled: true,
@@ -35,4 +35,5 @@ module.exports = {
   compilers: {
     solc: useSolcNightly ? solcNightly : solcStable,
   },
+  plugins: ['solidity-coverage'],
 };
